@@ -1,0 +1,4 @@
+0,Diesel,gas,100,17.80
+1,Regular,gas,100,20.70
+2,Super,gas,200,22.56
+3,Aditivo Diesel,aceite,20,80.00
