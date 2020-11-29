@@ -29,11 +29,11 @@ int main()
   file << "tercera línea\n";
   file.close();
  */
-/* prueba de usuarios
+// prueba de usuarios
 Validations vt;
 
 cout<<vt.isUserExists(0001);
-*/
+
     return 0;
 }
 
