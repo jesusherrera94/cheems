@@ -9,6 +9,8 @@
 #include "usuarios.h"
 #include "producto.h"
 #include "utilities.h"
+#include "cliente.h"
+
 using namespace std;
 
 string ExePath() {
