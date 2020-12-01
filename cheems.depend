@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1606685569 source:c:\users\willg\onedrive\documentos\proyecto\cheems\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	<wchar.h>
+	<locale.h>
+	"ios.h"
+	"validations.h"
+	"persona.h"
+	"usuarios.h"
+	"producto.h"
+	"utilities.h"
+	"cliente.h"
+
+1606684938 c:\users\willg\onedrive\documentos\proyecto\cheems\ios.h
+	<iostream>
+	<fstream>
+	<string>
+	<conio.h>
+	<stdlib.h>
+	"usuarios.h"
+	"producto.h"
+	"utilities.h"
+
+1606684938 c:\users\willg\onedrive\documentos\proyecto\cheems\usuarios.h
+	"persona.h"
+
+1606684938 c:\users\willg\onedrive\documentos\proyecto\cheems\persona.h
+	<iostream>
+
+1606684938 c:\users\willg\onedrive\documentos\proyecto\cheems\producto.h
+
+1606684938 c:\users\willg\onedrive\documentos\proyecto\cheems\utilities.h
+	<windows.h>
+	<iostream>
+
+1606684938 c:\users\willg\onedrive\documentos\proyecto\cheems\validations.h
+	"utilities.h"
+	"ios.h"
+
+1606690596 c:\users\willg\onedrive\documentos\proyecto\cheems\cliente.h
+	"comprascliente.h"
+
+1606690562 c:\users\willg\onedrive\documentos\proyecto\cheems\comprascliente.h
+
