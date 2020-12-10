@@ -3,12 +3,16 @@
 
 #include <windows.h>
 #include <iostream>
+#include <ctime>
+#include <string>
+#include <sstream>
 
 using namespace std;
 
 class Utilities{
 private:
 public:
+    Utilities(){}
     string tokenizer(string cadena, string divisor, int pos){
                         if(cadena.size()>0){
                          char oracion[cadena.size()];
@@ -39,6 +43,20 @@ public:
        string::size_type pos = string( buffer ).find_last_of( "\\/" );
        return string( buffer ).substr( 0, pos-9);
     }
+    //Terminar esto
+    string getActualDate(){
+        time_t t = time(0);
+        struct tm * now = localtime( & t );
+        stringstream day;
+        day << now->tm_mday;
+        stringstream month;
+        month << (now->tm_mon + 1);
+        stringstream year;
+        year << (now->tm_year + 1900);
+        string actualDate = day.str() + "/" + month.str() + "/" + year.str();
+       return actualDate;
+    }
+    ~Utilities(){}
 };
 
 

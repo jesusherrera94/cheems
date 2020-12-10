@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1607640423 source:c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	<wchar.h>
+	<locale.h>
+	<string.h>
+	"login.h"
+
+1607636523 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\ios.h
+	<iostream>
+	<fstream>
+	<string>
+	<conio.h>
+	<stdlib.h>
+	"usuarios.h"
+	"producto.h"
+	"utilities.h"
+	"cliente.h"
+	"validations.h"
+	<string.h>
+	"factura.h"
+
+1606875368 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\usuarios.h
+	"persona.h"
+
+1606955781 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\persona.h
+	<iostream>
+
+1606794251 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\producto.h
+
+1606914422 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\utilities.h
+	<windows.h>
+	<iostream>
+	<ctime>
+	<string>
+	<sstream>
+
+1606794502 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\cliente.h
+	"persona.h"
+	"comprascliente.h"
+
+1606794075 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\comprascliente.h
+
+1607636539 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\validations.h
+	"utilities.h"
+	"ios.h"
+
+1607620912 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\login.h
+	<iostream>
+	"usuarios.h"
+	"validations.h"
+	"ios.h"
+	"utilities.h"
+	"menu.h"
+
+1607639278 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\menu.h
+	"usuarios.h"
+	<iostream>
+	"utilities.h"
+	"crud.h"
+	"facturacion.h"
+
+1607619082 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\crud.h
+	<unistd.h>
+	<fstream>
+	"utilities.h"
+	"validations.h"
+	"ios.h"
+	"usuarios.h"
+	"cliente.h"
+	"producto.h"
+	<cstring>
+	<cstdio>
+
+1607636934 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\facturacion.h
+	<iostream>
+	"validations.h"
+	"ios.h"
+	"utilities.h"
+	"crud.h"
+	<string>
+	"producto.h"
+	<fstream>
+
+1607624663 c:\users\jesus\documents\tareas\programacion de sistemas\ejemplos de clase\cheemsv1\factura.h
+

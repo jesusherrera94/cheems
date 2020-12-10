@@ -1,5 +1,7 @@
 #ifndef COMPRASCLIENTE_H_INCLUDED
 #define COMPRASCLIENTE_H_INCLUDED
+
+
 class comprasreciente
 {
 private:
@@ -63,7 +65,5 @@ float comprasreciente::ObtenerSubtotal()
 {
     return subtotal;
 }
-
-
 
 #endif // COMPRASCLIENTE_H_INCLUDED

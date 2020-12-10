@@ -2,6 +2,7 @@
 #define PRODUCTO_H_INCLUDED
 
 
+
 class Producto{
 private:
     int ID;
@@ -50,5 +51,6 @@ public:
         return this -> precioUnitario;
     }
 };
+
 
 #endif // PRODUCTO_H_INCLUDED

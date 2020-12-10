@@ -2,6 +2,7 @@
 #define PERSONA_H_INCLUDED
 
 
+
 #include <iostream>
 using namespace std;
 
@@ -43,7 +44,7 @@ public:
     string getFechaNacimiento(){
         return this -> fechaNacimiento;
     }
+    ~Persona(){};
 };
-
 
 #endif // PERSONA_H_INCLUDED

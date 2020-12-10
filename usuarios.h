@@ -1,5 +1,7 @@
 #ifndef USUARIOS_H_INCLUDED
 #define USUARIOS_H_INCLUDED
+
+
 #include "persona.h"
 
 //fijarse aqui
@@ -11,7 +13,6 @@ private:
     string ultimoLogin;
 public:
     Usuarios(){}
-    //aqui tambien
     Usuarios(int id,string nombre, string identidad, string fechaNacimiento, int pin, int tipo, string ultimoLogin):
         Persona(id,nombre,identidad,fechaNacimiento){
         this -> pin = pin;
@@ -36,6 +37,6 @@ public:
     string getUltimoLogin(){
         return this -> ultimoLogin;
     }
-} ;
+};
 
 #endif // USUARIOS_H_INCLUDED

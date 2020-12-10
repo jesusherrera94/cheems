@@ -1,4 +1,7 @@
-0,Diesel,gas,100,17.80
-1,Regular,gas,100,20.70
-2,Super,gas,200,22.56
-3,Aditivo Diesel,aceite,20,80.00
+0,Diesel,gas,98,17.8
+1,Regular,gas,96,20.7
+2,Super,gas,198,22.56
+3,Aditivo Diesel,aceite,18,80.45
+4,Doritos Grandes,churros,0,30
+5,Oreos Grandes,galletas,98,30
+6,Pringles Grandes,churros,198,30
