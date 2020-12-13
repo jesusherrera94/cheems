@@ -40,7 +40,7 @@ class login{
                                 break;
                             default:
                                 finished = false;
-                                cout<<"Error al iniciar sesion....";
+                                cout<<"Error al iniciar sesión....";
                         }
                     }
                     else{

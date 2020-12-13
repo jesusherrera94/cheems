@@ -18,7 +18,7 @@ public:
             system("cls");
             do{
                 cout<<"\t__==Gasolinera CEUTEC==__\n\t     Administración"<<endl;
-                cout<<"1)Usuarios\n2)Clientes\n3)Inventario\n4)Facturacion\n5)Salir\nIngrese una opción: ";
+                cout<<"1)Usuarios\n2)Clientes\n3)Inventario\n4)Facturación\n5)Salir\nIngrese una opción: ";
                 cin>>index;
                 switch(index){
                     case 1:
@@ -37,7 +37,7 @@ public:
                         cout<<"Saliendo del sistema..."<<endl;
                         break;
                     default:
-                        cout<<"***Error: Opcion no valida..."<<endl;
+                        cout<<"***Error: Opción no válida..."<<endl;
                         break;
                 }
 
@@ -61,7 +61,7 @@ public:
                         cout<<"Saliendo del sistema..."<<endl;
                         break;
                     default:
-                        cout<<"***Error: Opcion no valida"<<endl;
+                        cout<<"***Error: Opción no válida"<<endl;
                         break;
                 }
             }while(index!=3);
@@ -72,7 +72,7 @@ public:
             int index = 0;
             CRUD cr;
             do{
-                cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menu de gestion Usuarios"<<endl;
+                cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menú de Gestión Usuarios"<<endl;
                 cout<<"1)Listar Usuarios\n2)Añadir Usuario\n3)Regresar\nIngrese una opción: "<<endl;
                 cin>>index;
                 switch(index){
@@ -86,7 +86,7 @@ public:
                         system("cls");
                         break;
                     default:
-                        cout<<"***Error: Opcion no valida"<<endl;
+                        cout<<"***Error: Opción no válida"<<endl;
                 }
             }while(index!=3);
 
@@ -99,7 +99,7 @@ public:
             switch(this->sesion.getTipo()){
                 case 1:
                     do{
-                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menu de gestion clientes"<<endl;
+                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menú de gestión clientes"<<endl;
                         cout<<"1)Listar clientes\n2)Añadir cliente\n3)Regresar\nIngrese una opción: "<<endl;
                         cin>>index;
                         switch(index){
@@ -113,13 +113,13 @@ public:
                                     system("cls");
                                     break;
                                 default:
-                                    cout<<"*****Error: Opcion no valida"<<endl;
+                                    cout<<"*****Error: Opción no válida"<<endl;
                         }
                     }while(index!=3);
                     break;
                 case 2:
                     do{
-                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menu de gestion clientes"<<endl;
+                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menú de Gestión clientes"<<endl;
                         cout<<"1)Añadir cliente\n2)Regresar\nIngrese una opción: "<<endl;
                         cin>>index;
                         switch(index){
@@ -130,12 +130,12 @@ public:
                             system("cls");
                             break;
                         default:
-                            cout<<"***Error:Opcion no valida"<<endl;
+                            cout<<"***Error: Opción no válida"<<endl;
                         }
                     }while(index!=2);
                     break;
                 default:
-                    cout<<"***Error al identificar el ususario"<<endl;
+                    cout<<"***Error al identificar el usuario"<<endl;
             }
         }
 
@@ -144,7 +144,7 @@ public:
             int index = 0;
             CRUD cr;
             do{
-                cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menu de gestion de inventario"<<endl;
+                cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menú de Gestión de Inventario"<<endl;
                 cout<<"1)Listar inventario\n2)Añadir producto\n3)Regresar\nIngrese una opción: ";
                 cin>>index;
                 switch(index){
@@ -158,7 +158,7 @@ public:
                         system("cls");
                         break;
                     default:
-                        cout<<"***Error: Opcion no valida"<<endl;
+                        cout<<"***Error: Opción no válida"<<endl;
                 }
 
             }while(index!=3);
@@ -170,8 +170,8 @@ public:
             switch(this->sesion.getTipo()){
                 case 1:
                     do{
-                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menu de Facturacion"<<endl;
-                        cout<<"1)Facturar Producto\n2)Ver Ventas de hoy\n3)ver sus ventas de hoy\n4)Ver total de ventas\n5)Regresar\nIngrese una opción: "<<endl;
+                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menú de Facturación"<<endl;
+                        cout<<"1)Facturar Producto\n2)Ver Ventas de hoy\n3)Ver sus ventas de hoy\n4)Ver total de ventas\n5)Regresar\nIngrese una opción: "<<endl;
                         cin>>index;
                         switch(index){
                         case 1:
@@ -190,14 +190,14 @@ public:
                             system("cls");
                             break;
                         default:
-                            cout<<"***Error: Opcion no valida"<<endl;
+                            cout<<"***Error: Opción no válida"<<endl;
                         }
                     }while(index!=5);
                     break;
                 case 2:
                     do{
-                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menu de Facturacion"<<endl;
-                        cout<<"1)Facturar Producto\n2)ver sus ventas de hoy\n3)Regresar\nIngrese una opción: "<<endl;
+                        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Menú de Facturación"<<endl;
+                        cout<<"1)Facturar Producto\n2)Ver sus ventas de hoy\n3)Regresar\nIngrese una opción: "<<endl;
                         cin>>index;
                         switch(index){
                             case 1:
@@ -210,12 +210,12 @@ public:
                                 system("cls");
                                 break;
                             default:
-                                cout<<"***Error:Opcion no valida"<<endl;
+                                cout<<"***Error: Opción no válida"<<endl;
                         }
                     }while(index!=3);
                     break;
                 default:
-                    cout<<"Error al identificar el ususario"<<endl;
+                    cout<<"Error al identificar el usuario"<<endl;
             }
         }
 
