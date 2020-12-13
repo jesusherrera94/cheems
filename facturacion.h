@@ -50,7 +50,7 @@ public:
                     clientFlag = true;
                 }
             }else{
-                cout<<"Formato de pin de cliente invalido"<<endl;
+                cout<<"Formato de pin de cliente inválido"<<endl;
                 clientFlag = true;
             }
 
@@ -82,7 +82,7 @@ public:
                         }
                     }
                     else{
-                        cout<<"****Error: La cantidad no es un valor valido"<<endl;
+                        cout<<"****Error: La cantidad no es un valor válido"<<endl;
                     }
                     //insertar producto en un arreglo nombre, cantidad y precio unitario
 
@@ -158,7 +158,7 @@ public:
                 }
         }
         cout<<"====================================================================================================================="<<endl;
-        cout<<"Total de ventas al dia: "<<totalVentasDiarias<<endl;
+        cout<<"Total de ventas al día: "<<totalVentasDiarias<<endl;
         cout<<"Desea guardar el reporte en la base de datos?[S:si, N:no]: ";
         cin>>respuesta;
         if(tolower(respuesta)=='s'){
@@ -166,7 +166,7 @@ public:
             file.open(ut.ExePath() + "/BD/ventasDiarias.txt",ios::app);
             file<<"\n"<<ut.getActualDate()<<","<<totalVentasDiarias;
             file.close();
-            cout<<"*****Reporte agregado con exito"<<endl;
+            cout<<"*****Reporte agregado con éxito"<<endl;
         }
         system("pause");
         system("cls");
@@ -193,7 +193,7 @@ public:
                 }
         }
         cout<<"====================================================================================================================="<<endl;
-        cout<<"Total de ventas al dia: "<<totalVentasDiarias<<endl;
+        cout<<"Total de ventas al día: "<<totalVentasDiarias<<endl;
         system("pause");
         system("cls");
     }

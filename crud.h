@@ -45,13 +45,13 @@ public:
                         }
                         break;
                     case 2:
-                        cout<<"Ingrese numero de identidad(sin guiones): ";
+                        cout<<"Ingrese número de identidad(sin guiones): ";
                         getline(cin,identidad);
                         if(vt.validateTextField(identidad)/*&&strlen(identidad)==13*/){
                             i++;
                         }
                         else{
-                            cout<<"****Error: La identidad debe ser al menos de 13 caracteres"<<endl;
+                            cout<<"****Error: La identidad debe ser al menos de 13 carácteres"<<endl;
                         }
                         break;
                     case 3:
@@ -61,7 +61,7 @@ public:
                             i++;
                         }
                         else{
-                            cout<<"****Error: La fecha de nacimiento no puede quedar vacia"<<endl;
+                            cout<<"****Error: La fecha de nacimiento no puede quedar vacía"<<endl;
                         }
                         break;
                     case 4:
@@ -70,7 +70,7 @@ public:
                         if(vt.validateNumberField(tipo)&&(tipo==1||tipo==2)){
                             i++;
                         }else{
-                            cout<<"****Error: Formato de tipo de usuario invalido"<<endl;
+                            cout<<"****Error: Formato de tipo de usuario inválido"<<endl;
                         }
                         break;
                 }
@@ -79,7 +79,7 @@ public:
             file.open(this -> path  + "/BD/usuarios.txt",ios::app);
             file <<"\n"<<(id+1)<<","<<nombre<<","<<identidad<<","<<fechaNacimiento<<","<<(pin+1)<<","<<tipo<<","<<ut.getActualDate();
             file.close();
-            cout<<"*****Ususario creado con exito"<<endl;
+            cout<<"*****Ususario creado con éxito"<<endl;
             cout<<"El PIN del nuevo usuario es: "<<( pin + 1 )<<endl;
             system("pause");
             system("cls");
@@ -116,7 +116,7 @@ public:
             }
         cout<<"====================================================================================================================="<<endl;
         do{
-            cout<<"1)Editar usuario\n2)Dar de baja\n3)Regresar\nIngrese opcion: ";
+            cout<<"1)Editar usuario\n2)Dar de baja\n3)Regresar\nIngrese opción: ";
             cin>>index;
             switch(index){
                 case 1:
@@ -142,7 +142,7 @@ public:
                                 k++;
                             }
                         }
-                        cout<<"Usuario editado con exito"<<endl;
+                        cout<<"Usuario editado con éxito"<<endl;
                         file.close();
                         system("pause");
                         system("cls");
@@ -158,7 +158,7 @@ public:
                     cin>>j;
                     j= vt.getUserPos(j);
                         if(is.getAllUsrsObj()[j].getPin()!=sesion.getPin()){
-                        cout<<"Esta seguro de eliminar ususario "<<is.getAllUsrsObj()[j].getNombre()<<"?, [ si:S ,n:N ]: ";
+                        cout<<"Está seguro de eliminar usuario "<<is.getAllUsrsObj()[j].getNombre()<<"?, [ si:S ,n:N ]: ";
                         cin>>yesnt;
                             if(tolower(yesnt)=='s'){
                                 ofstream file;
@@ -177,13 +177,13 @@ public:
                                         }
                                     ii++;
                                 }
-                                cout<<"Usuario Eliminado con exito"<<endl;
+                                cout<<"Usuario Eliminado con éxito"<<endl;
                                 file.close();
                                 system("pause");
                                 system("cls");
                             }
                         }else{
-                            cout<<"*****Error:No puede eliminar su mismo ususario"<<endl;
+                            cout<<"*****Error:No puede eliminar su mismo usuario"<<endl;
                         }
                     break;
                     }
@@ -192,7 +192,7 @@ public:
                     break;
                     }
                 default:
-                    cout<<"Opcion no valida...."<<endl;
+                    cout<<"Opción no válida...."<<endl;
             }
         }while(index!=3);
 
@@ -205,7 +205,7 @@ public:
         int tipo,index=0;
         Validations vt;
         cout<<"\t__==Gasolinera CEUTEC==__\n\t     Editar usuario"<<endl;
-        cout<<"1)Nombre\n2)Identidad\n3)Fecha Nacimiento\n4)Tipo de usuario\n5)Regresar\nIngrese opcion: ";
+        cout<<"1)Nombre\n2)Identidad\n3)Fecha Nacimiento\n4)Tipo de usuario\n5)Regresar\nIngrese opción: ";
         cin>>index;
         cin.ignore();
         switch(index){
@@ -219,13 +219,13 @@ public:
                         }
                 break;
             case 2:
-                cout<<"Ingrese numero de identidad(sin guiones): ";
+                cout<<"Ingrese número de identidad(sin guiones): ";
                         getline(cin,identidad);
                         if(vt.validateTextField(identidad)/*&&strlen(identidad)==13*/){
                             usr.setIdentidad(identidad);
                         }
                         else{
-                            cout<<"****Error: La identidad debe ser al menos de 13 caracteres"<<endl;
+                            cout<<"****Error: La identidad debe ser al menos de 13 carácteres"<<endl;
                         }
                 break;
             case 3:
@@ -235,7 +235,7 @@ public:
                             usr.setFechaNacimiento(fechaNacimiento);
                         }
                         else{
-                            cout<<"****Error: La fecha de nacimiento no puede quedar vacia"<<endl;
+                            cout<<"****Error: La fecha de nacimiento no puede quedar vacía"<<endl;
                         }
                         break;
                 break;
@@ -245,14 +245,14 @@ public:
                         if(vt.validateNumberField(tipo)&&(tipo==1||tipo==2)){
                             usr.setTipo(tipo);
                         }else{
-                            cout<<"****Error: Formato de tipo de usuario invalido"<<endl;
+                            cout<<"****Error: Formato de tipo de usuario inválido"<<endl;
                         }
                 break;
             case 5:
                 system("cls");
                 break;
             default:
-                cout<<"No es una opcion..."<<endl;
+                cout<<"No es una opción..."<<endl;
         }
         return usr;
     }
@@ -289,7 +289,7 @@ void nuevoCliente(){
             }
             break;
         case 2:
-            cout<<"Ingrese numero de identidad(sin nombres): ";
+            cout<<"Ingrese número de identidad(sin nombres): ";
             getline(cin,identidad);
             if(vt.validateTextField(identidad)/*&&strlen(identidad)==13*/)
             {
@@ -297,7 +297,7 @@ void nuevoCliente(){
             }
             else
             {
-                cout<<"***Error: La identidad debe ser al menos 13 caracteres"<<endl;
+                cout<<"***Error: La identidad debe ser al menos 13 carácteres"<<endl;
             }
             break;
         case 3:
@@ -309,11 +309,11 @@ void nuevoCliente(){
             }
             else
             {
-                cout<<"***Error: La fecha de nacimientono puede quedar vacia"<<endl;
+                cout<<"***Error: La fecha de nacimiento no puede quedar vacía"<<endl;
             }
             break;
             default:
-                cout<<"Opcion no valida";
+                cout<<"Opción no válida";
                 break;
         }
     }
@@ -321,7 +321,7 @@ void nuevoCliente(){
             file.open(this -> path  + "/BD/clientes.txt",ios::app);
             file <<"\n"<<(id+1)<<","<<nombre<<","<<identidad<<","<<fechadenacimiento<<","<<(pin+1)<<","<<ut.getActualDate()<<","<<1;
             file.close();
-            cout<<"*****Cliente creado con exito"<<endl;
+            cout<<"*****Cliente creado con éxito"<<endl;
             cout<<"El PIN del nuevo cliente es: "<<( pin + 1 )<<endl;
             system("pause");
             system("cls");
@@ -331,9 +331,9 @@ void listClients(){
         IOS is(ut.ExePath());
         Validations vt;
         int index=0,j, aSize=0;
-        cout<<"\t__==Gasolinera CEUTEC==__\n\t     lista de clientes"<<endl;
+        cout<<"\t__==Gasolinera CEUTEC==__\n\t     Lista de clientes"<<endl;
         cout<<"====================================================================================================================="<<endl;
-        cout<<"||\tID\t||\tNombre\t||\tIdentidad\t||\t No. Compras\t ||\tUltimo compra\t||"<<endl;
+        cout<<"||\tID\t||\tNombre\t||\tIdentidad\t||\t No. Compras\t ||\tÚltima compra\t||"<<endl;
         cout<<"====================================================================================================================="<<endl;
         is.leerTodosClientes();
         for(int i=0;i<1000;i++){
@@ -346,7 +346,7 @@ void listClients(){
             }
         cout<<"====================================================================================================================="<<endl;
         do{
-            cout<<"1)Editar Cliente\n2)Dar de baja\n3)Regresar\nIngrese opcion: ";
+            cout<<"1)Editar Cliente\n2)Dar de baja\n3)Regresar\nIngrese opción: ";
             cin>>index;
             switch(index){
                 case 1:
@@ -374,7 +374,7 @@ void listClients(){
                             }
 
                             }
-                        cout<<"*****Cliente editado con exito"<<endl;
+                        cout<<"*****Cliente editado con éxito"<<endl;
                         file.close();
                         system("pause");
                         system("cls");
@@ -391,7 +391,7 @@ void listClients(){
                         cin>>j;
                         j=vt.getClientPos(j);
                         if(j!=-1){
-                        cout<<"Esta seguro de eliminar Cliente "<<is.getAllClientsObj()[j].getNombre()<<"?, [ si:S ,n:N ]: ";
+                        cout<<"Está seguro de eliminar Cliente "<<is.getAllClientsObj()[j].getNombre()<<"?, [ si:S ,n:N ]: ";
                         cin>>yesnt;
                             if(tolower(yesnt)=='s'){
                                 ofstream file;
@@ -410,7 +410,7 @@ void listClients(){
                                         }
                                     ii++;
                                 }
-                                cout<<"Cliente Eliminado con exito"<<endl;
+                                cout<<"Cliente Eliminado con éxito"<<endl;
                                 file.close();
                                 system("pause");
                                 system("cls");
@@ -427,7 +427,7 @@ void listClients(){
                     break;
                     }
                 default:
-                    cout<<"Opcion no valida...."<<endl;
+                    cout<<"Opción no válida...."<<endl;
                 }
         }while(index!=3);
         }
@@ -439,7 +439,7 @@ void listClients(){
         int index=0;
         Validations vt;
         cout<<"\t__==Gasolinera CEUTEC==__\n\t     Editar cliente"<<endl;
-        cout<<"1)Nombre\n2)Identidad\n3)Fecha Nacimiento\n4)Regresar\nIngrese opcion: ";
+        cout<<"1)Nombre\n2)Identidad\n3)Fecha Nacimiento\n4)Regresar\nIngrese opción: ";
         cin>>index;
         cin.ignore();
         switch(index){
@@ -453,13 +453,13 @@ void listClients(){
                         }
                 break;
             case 2:
-                cout<<"Ingrese numero de identidad(sin guiones): ";
+                cout<<"Ingrese número de identidad(sin guiones): ";
                         getline(cin,identidad);
                         if(vt.validateTextField(identidad)/*&&strlen(identidad)==13*/){
                             clt.setIdentidad(identidad);
                         }
                         else{
-                            cout<<"****Error: La identidad debe ser al menos de 13 caracteres"<<endl;
+                            cout<<"****Error: La identidad debe ser al menos de 13 carácteres"<<endl;
                         }
                 break;
             case 3:
@@ -469,7 +469,7 @@ void listClients(){
                             clt.setFechaNacimiento(fechaNacimiento);
                         }
                         else{
-                            cout<<"****Error: La fecha de nacimiento no puede quedar vacia"<<endl;
+                            cout<<"****Error: La fecha de nacimiento no puede quedar vacía"<<endl;
                         }
                         break;
                 break;
@@ -477,7 +477,7 @@ void listClients(){
                 system("cls");
                 break;
             default:
-                cout<<"No es una opcion..."<<endl;
+                cout<<"No es una opción..."<<endl;
         }
         return clt;
     }
@@ -552,7 +552,7 @@ void nuevoProducto(){
             }
             break;
         default:
-                cout<<"Opcion no valida...."<<endl;
+                cout<<"Opción no válida...."<<endl;
                 break;
 
         }
@@ -562,7 +562,7 @@ void nuevoProducto(){
     file.open(this -> path  + "/BD/productos.txt", ios::app);
     file<<"\n"<<(id+1)<<","<<nombre<<","<<tipo<<","<<stock<<","<<precio;
     file.close();
-    cout<<"*****producto creado con exito"<<endl;
+    cout<<"*****producto creado con éxito"<<endl;
     cout<<"El ID del nuevo producto es: "<<( id + 1 )<<endl;
     system("pause");
     system("cls");
@@ -588,7 +588,7 @@ void listProductos(){
             }
         cout<<"====================================================================================================================="<<endl;
         do{
-            cout<<"1)Editar producto\n2)Dar de baja\n3)Regresar\nIngrese opcion: ";
+            cout<<"1)Editar producto\n2)Dar de baja\n3)Regresar\nIngrese opción: ";
             cin>>index;
             switch(index){
                 case 1:
@@ -615,7 +615,7 @@ void listProductos(){
                                 k++;
                             }
                         }
-                        cout<<"*****Producto editado con exito"<<endl;
+                        cout<<"*****Producto editado con éxito"<<endl;
                         file.close();
                         system("pause");
                         system("cls");
@@ -633,7 +633,7 @@ void listProductos(){
                         cin>>j;
                          j= vt.getProductPos(j);
                         if(j!=-1){
-                        cout<<"Esta seguro de eliminar producto "<<is.getAllProducts()[j].getNombre()<<"?, [ si:S ,n:N ]: ";
+                        cout<<"Está seguro de eliminar producto "<<is.getAllProducts()[j].getNombre()<<"?, [ si:S ,n:N ]: ";
                         cin>>yesnt;
                             if(tolower(yesnt)=='s'){
                                 ofstream file;
@@ -652,7 +652,7 @@ void listProductos(){
                                         }
                                     ii++;
                                 }
-                                cout<<"Producto Eliminado con exito"<<endl;
+                                cout<<"Producto Eliminado con éxito"<<endl;
                                 file.close();
                                 system("pause");
                                 system("cls");
@@ -669,7 +669,7 @@ void listProductos(){
                     break;
                     }
                 default:
-                    cout<<"Opcion no valida...."<<endl;
+                    cout<<"Opción no válida...."<<endl;
                 }
         }while(index!=3);
         }
@@ -682,7 +682,7 @@ Producto editarProducto(Producto prod){
         float precioUnitario;
         Validations vt;
         cout<<"\t__==Gasolinera CEUTEC==__\n\t     Editar producto"<<endl;
-        cout<<"1)Nombre\n2)Tipo\n3)Stock\n4)Precio Unitario\n5)Regresar\nIngrese opcion: ";
+        cout<<"1)Nombre\n2)Tipo\n3)Stock\n4)Precio Unitario\n5)Regresar\nIngrese opción: ";
         cin>>index;
         cin.ignore();
         switch(index){
@@ -729,7 +729,7 @@ Producto editarProducto(Producto prod){
                 system("cls");
                 break;
             default:
-                cout<<"No es una opcion..."<<endl;
+                cout<<"No es una opción..."<<endl;
         }
         return prod;
 }
